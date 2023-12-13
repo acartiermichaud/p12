@@ -1,0 +1,19 @@
+header {
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 70px;
+  padding: 30px 60px;
+  background-color: white;
+  margin-bottom: 50px;
+  background-image: url('../../images/background_header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,.33);
+}
+

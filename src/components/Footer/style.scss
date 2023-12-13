@@ -1,0 +1,25 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #222222;
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: #889dd7;
+    }
+  }
+
+  p, i {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}

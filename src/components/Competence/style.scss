@@ -1,0 +1,39 @@
+.competences {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 50px;
+  color: #333333;
+  
+  &_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    gap : 60px;
+    margin: 50px;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 25%;
+  }
+
+  &_img-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &_img {
+    height: 60px;
+  }
+
+  &_img-resized {
+    height: 70px;
+  }
+}
