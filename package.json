@@ -2,6 +2,7 @@
   "name": "p12",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://acartiermichaud.github.io/p11/",
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@testing-library/jest-dom": "^5.17.0",

@@ -9,7 +9,7 @@ function FormationLabel ({icon, title, text}) {
   
   return (
     <div className='formation_label'>
-      <i class={icon}></i>
+      <i className={icon}></i>
       <div>
         <h4>{title}</h4>
         <p>{text}</p>

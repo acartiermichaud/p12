@@ -1,0 +1,101 @@
+[
+	{
+		"id": "1",
+		"title": "Argent Bank",
+		"subtitle": "React & Redux",
+		"cover": "/logo512.png",
+		"pictures": [
+			"../../images/projects/p11/p11_1.png",
+			"../../images/projets/p11/p11_2.png",
+			"../../images/projets/p11/p11_3.png",
+			"../../images/projets/p11/p11_4.png"
+		],
+		"description": "Création d'une application web complète et responsive avec React et Redux pour une agence banquaire.",
+		"competences": [
+			"../../images/competences/react.png",
+			"../../images/competences/redux.png",
+			"../../images/competences/sass.png",
+			"../../images/competences/API_REST.png"
+		],
+		"githubpage": "https://acartiermichaud.github.io/p11/",
+		"github":"https://github.com/acartiermichaud/p11"
+	},
+	{
+		"id": "2",
+		"title": "Kasa",
+		"subtitle": "React",
+		"cover": "../../images/projets/p8/p8_1.png",
+		"pictures": [
+			"../../images/projets/p8/p8_1.png",
+			"../../images/projets/p8/p8_2.png",
+			"../../images/projets/p8/p8_3.png",
+			"../../images/projets/p8/p8_4.png"
+		],
+		"description": "Création d'une application web de location immobilière avec React.",
+		"competences": [
+			"../../images/competences/react.png",
+			"../../images/competences/sass.png"
+		],
+		"githubpage": "https://acartiermichaud.github.io/p8/",
+		"github":"https://github.com/acartiermichaud/p8"
+	},
+	{
+		"id": "3",
+		"title": "Sophie Bluel - Architecte d'intérieur",
+		"subtitle": "JavaScript",
+		"cover": "../../images/projets/p6/p6_1.png",
+		"pictures": [
+			"../../images/projets/p6/p6_1.png",
+			"../../images/projets/p6/p6_2.png",
+			"../../images/projets/p6/p6_3.png",
+			"../../images/projets/p6/p6_4.png",
+			"../../images/projets/p6/p6_5.png",
+			"../../images/projets/p6/p6_6.png",
+			"../../images/projets/p6/p6_7.png"
+		],
+		"description": "Conception d'une page web dynamique avec JavaScript pour le portfolio d’une architecte d’intérieur.",
+		"competences": [
+			"../../images/competences/JS.png"
+		],
+		"githubpage": "",
+		"github":"https://github.com/acartiermichaud/P6"
+	},
+	{
+		"id": "4",
+		"title": "Ohmyfood",
+		"subtitle": "Animations en CSS",
+		"cover": "../../images/projets/p4/p4_1.png",
+		"pictures": [
+			"../../images/projets/p4/p4_1.png",
+			"../../images/projets/p4/p4_2.png",
+			"../../images/projets/p4/p4_3.png",
+			"../../images/projets/p4/p4_4.png",
+			"../../images/projets/p4/p4_5.png",
+			"../../images/projets/p4/p4_6.png"
+		],
+		"description": "Développement d'une inteface responsive (“mobile first”) avec des animations CSS.",
+		"competences": [
+			"../../images/competences/HTML.png",
+			"../../images/competences/sass.png"
+		],
+		"githubpage": "https://acartiermichaud.github.io/P4/",
+		"github":"https://github.com/acartiermichaud/P4"
+	},
+	{
+		"id": "5",
+		"title": "Booki",
+		"subtitle": "HTML & CSS",
+		"cover": "../../images/projets/p3/p3_1.png",
+		"pictures": [
+			"../../images/projets/p3/p3_1.png",
+			"../../images/projets/p3/p3_2.png"
+		],
+		"description": "Création de la page d'accueil d'une agence de voyage avec HTML & CSS.",
+		"competences": [
+			"../../images/competences/HTML.png",
+			"../../images/competences/CSS.png"
+		],
+		"githubpage": "https://acartiermichaud.github.io/P3/",
+		"github":"https://github.com/acartiermichaud/P3"
+	}
+]
