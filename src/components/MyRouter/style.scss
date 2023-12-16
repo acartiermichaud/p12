@@ -5,7 +5,10 @@
 .page-container {
   display: flex;
   flex-direction: column;
-  background-image: url("../../images/background.jpg");
+  background-image: url("../../images/background.webp");
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 50px;
+  min-width: 320px;
 }

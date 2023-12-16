@@ -10,16 +10,17 @@ import Competence from '../../components/Competence'
 import './style.scss'
 
 // Images
-import openClassrooms from '../../images/openClassrooms.png'
-import imgFormation from '../../images/integrateurWeb.png'
-import logoHTML from '../../images/competences/HTML.png'
-import logoCSS from '../../images/competences/CSS.png'
-import logoJS from '../../images/competences/JS.png'
-import logoResponsive from '../../images/competences/responsive.png'
-import logoReact from '../../images/competences/react.png'
-import logoRedux from '../../images/competences/redux.png'
-import logoSEO from '../../images/competences/seo.png'
-import logoGestion from '../../images/competences/gestion.png'
+import photoProfile from '../../images/photo_profile.webp'
+import openClassrooms from '../../images/openClassrooms.webp'
+import imgFormation from '../../images/integrateurWeb.webp'
+import logoHTML from '../../images/competences/HTML.webp'
+import logoCSS from '../../images/competences/CSS.webp'
+import logoJS from '../../images/competences/JS.webp'
+import logoResponsive from '../../images/competences/responsive.webp'
+import logoReact from '../../images/competences/react.webp'
+import logoRedux from '../../images/competences/redux.webp'
+import logoSEO from '../../images/competences/seo.webp'
+import logoGestion from '../../images/competences/gestion.webp'
 
 
 function Home () {
@@ -28,23 +29,28 @@ function Home () {
     <div>
       <Header activeTab="profile"/>
       <main>
-        <section className="description">
-          <div className="description_photo"></div>
+        <article className="description">
+          <img src={photoProfile} alt="Amandine Cartier-Michaud" className="description_photo" />
           <div className="description_text">
-            <h1>AMANDINE CARTIER-MICHAUD</h1>
+            <div className="description_title">
+              <h1>AMANDINE</h1>
+              <h1>CARTIER-MICHAUD</h1>
+            </div>
             <p>Dévelopeuse web, rigoureuse, créative et motivée !</p>
           </div>
-        </section>
+        </article>
 
         <section className="formation">
           <h1>Formation</h1>
           <div className='formation_container'>
             <div className='formation_card'>
-              <Link className="formation_link" target="_blank" to="https://openclassrooms.com/fr/paths/594-integrateur-web">
-                <h2>Intégrateur Web</h2>
+              <div className="formation_title">
+                <Link className="formation_link" target="_blank" to="https://openclassrooms.com/fr/paths/594-integrateur-web">
+                  <h2>Intégrateur Web</h2>
+                </Link>
                 <img src={openClassrooms} alt="OpenClassrooms" className="formation_logo" />
-              </Link>
-              <h3>AVRIL 2023 - DÉCEMBRE 2023</h3>
+                <h3>AVRIL 2023 - DÉCEMBRE 2023</h3>
+              </div>
               <FormationLabel 
                 icon="formation_icon fa-solid fa-graduation-cap" 
                 title="CERTIFICATION" 

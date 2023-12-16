@@ -1,0 +1,25 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 710px;
+  background-color: white;
+  color: #333333;
+
+  h1 {
+    font-size: 60px;
+    font-weight: 600;
+  }
+
+  &_link {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #333333;
+
+    &:hover {
+      color: #889dd7;
+    }
+  }
+}

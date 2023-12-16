@@ -19,11 +19,14 @@ function Projects () {
       <Header activeTab="projects"/>
       <main>
         <section className="projects">
-          {projects.map(({id, title, subtitle, cover}) =>
-            <Link className="no-decoration" key={id} to={`/project/${id}`}>
-              <Card url={cover} alt={title} title={title} subtitle={subtitle}/>
-            </Link>
-          )}
+          <h1>Projets</h1>
+          <div className='projects_container'>
+            {projects.map(({id, title, subtitle, cover}) =>
+              <Link className="projects_link" key={id} to={`/project/${id}`}>
+                <Card url={cover} alt={title} title={title} subtitle={subtitle}/>
+              </Link>
+            )}
+          </div>
         </section>
       </main>
     </div>

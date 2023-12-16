@@ -6,8 +6,6 @@ import './style.scss'
 
 
 function Card ({url, alt, title, subtitle}) {
-
-  console.log("url : "+url)
   
   return (
     <article className='card'>

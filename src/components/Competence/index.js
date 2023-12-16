@@ -19,7 +19,7 @@ function Competence ({img, title, text}) {
 }
 
 Competence.propTypes = {
-  img: PropTypes.array,
+  img: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
   text: PropTypes.string
 }
