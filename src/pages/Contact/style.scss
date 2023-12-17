@@ -3,6 +3,14 @@
   min-height: 710px;
   box-shadow: none;
 
+  &_title_lightmode {
+    color: #333333;
+  }
+
+  &_title_nightmode {
+    color: white;
+  }
+
   &_form {
     display: flex;
     flex-direction: column;
@@ -15,15 +23,31 @@
   &_label {
     font-size: 20px;
     font-weight: 300;
+
+    &_lightmode {
+      color: #333333;
+    }
+  
+    &_nightmode {
+      color: white;
+    }
   }
 
   &_input, &_textarea {
     border-radius: 5px;
-    box-shadow: rgba(0,0,0,.419608) 0px 14px 26px -12px, rgba(0,0,0,.117647) 0px 4px 23px 0px, rgba(0,0,0,.2) 0px 8px 10px -5px;
     border: none;
     font-size: 20px;
     font-weight: 300;
-    padding: 5px 0;;
+    padding: 5px 0;
+
+    &_lightmode {
+      box-shadow: rgba(0,0,0,.419608) 0px 14px 26px -12px, rgba(0,0,0,.117647) 0px 4px 23px 0px, rgba(0,0,0,.2) 0px 8px 10px -5px;
+    }
+  
+    &_nightmode {
+      background-color: rgb(190, 189, 189);
+      box-shadow: rgba(200, 200, 200, 0.42) 0px 14px 26px -12px, rgba(200, 200, 200, 0.118) 0px 4px 23px 0px, rgba(200, 200, 200, 0.2) 0px 8px 10px -5px;
+    }
 
     &:focus {
       outline: none;
@@ -51,9 +75,16 @@
     border: none;
     border-radius: 50px;
     color: white;
-    background-color: #333333;
     font-size: 20px;
     font-weight: 400;
+
+    &_lightmode {
+      background-color: #333333;
+    }
+  
+    &_nightmode {
+      background-color: rgb(95, 93, 93);
+    }
 
     &:hover {
       background-color: #889dd7;

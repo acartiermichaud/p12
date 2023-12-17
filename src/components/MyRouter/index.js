@@ -14,12 +14,16 @@ import Footer from '../../components/Footer'
 // Style
 import './style.scss'
 
+// Redux
+import { useSelector } from 'react-redux'
+
 
 function MyRouter () {
+  const { nightMode } = useSelector((state) => state.display)
   
   return (
     <Router>
-      <div className="page-container">
+      <div className={nightMode?"page-container page-container_nightmode":"page-container page-container_lightmode"}>
         <Routes>
           <Route path="/" element={<Home />} errorElement={<Error />}/>
           <Route path="/projects" element={<Projects />} errorElement={<Error />}/>

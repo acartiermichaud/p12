@@ -1,6 +1,14 @@
 .projects {
   box-shadow: none;
 
+  &_title_lightmode {
+    color: #333333;
+  }
+
+  &_title_nightmode {
+    color: white;
+  }
+
   &_container {
     display: flex;
     flex-wrap: wrap;

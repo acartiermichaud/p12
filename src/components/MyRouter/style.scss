@@ -5,10 +5,73 @@
 .page-container {
   display: flex;
   flex-direction: column;
-  background-image: url("../../images/background.webp");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   padding-bottom: 50px;
   min-width: 320px;
+
+  &_lightmode {
+    background-image: url("../../images/background.webp");
+  }
+
+  &_nightmode {
+    background-image: url("../../images/background_nightmode.jpg");
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  margin-top: 130px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 39px;
+  font-weight: 300;
+
+  @media (max-width: 375px) {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-weight: 600;
+
+  @media (max-width: 375px) {
+    font-size: 20px;
+  }
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 20px;
+  padding-bottom: 10px;
+
+  @media (max-width: 375px) {
+    font-size: 18px;
+  }
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 20px;
+
+  @media (max-width: 375px) {
+    font-size: 18px;
+  }
+}
+
+p {
+  font-size: 20px;
+  font-weight: 300;
+
+  @media (max-width: 375px) {
+    font-size: 18px;
+  }
 }

@@ -11,15 +11,19 @@ import './style.scss'
 // Data
 import projects from '../../data/projets.json'
 
+// Redux
+import { useSelector } from 'react-redux'
+
 
 function Projects () {
+  const { nightMode } = useSelector((state) => state.display)
   
   return (
     <div>
       <Header activeTab="projects"/>
       <main>
         <section className="projects">
-          <h1>Projets</h1>
+          <h1 className={nightMode?"projects_title projects_title_nightmode":"projects_title projects_title_lightmode"}>Projets</h1>
           <div className='projects_container'>
             {projects.map(({id, title, subtitle, cover}) =>
               <Link className="projects_link" key={id} to={`/project/${id}`}>

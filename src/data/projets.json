@@ -24,12 +24,12 @@
 		"id": "2",
 		"title": "Kasa",
 		"subtitle": "React",
-		"cover": "/images/projets/p8/p8_1.png",
+		"cover": "/images/projets/p8/p8_1.webp",
 		"pictures": [
-			"/images/projets/p8/p8_1.png",
-			"/images/projets/p8/p8_2.png",
-			"/images/projets/p8/p8_3.png",
-			"/images/projets/p8/p8_4.png"
+			"/images/projets/p8/p8_1.webp",
+			"/images/projets/p8/p8_2.webp",
+			"/images/projets/p8/p8_3.webp",
+			"/images/projets/p8/p8_4.webp"
 		],
 		"description": "Création d'une application web de location immobilière avec React.",
 		"competences": [
@@ -65,15 +65,15 @@
 		"id": "4",
 		"title": "Sophie Bluel",
 		"subtitle": "JavaScript",
-		"cover": "/images/projets/p6/p6_1.png",
+		"cover": "/images/projets/p6/p6_1.webp",
 		"pictures": [
-			"/images/projets/p6/p6_1.png",
-			"/images/projets/p6/p6_2.png",
-			"/images/projets/p6/p6_3.png",
-			"/images/projets/p6/p6_4.png",
-			"/images/projets/p6/p6_5.png",
-			"/images/projets/p6/p6_6.png",
-			"/images/projets/p6/p6_7.png"
+			"/images/projets/p6/p6_1.webp",
+			"/images/projets/p6/p6_2.webp",
+			"/images/projets/p6/p6_3.webp",
+			"/images/projets/p6/p6_4.webp",
+			"/images/projets/p6/p6_5.webp",
+			"/images/projets/p6/p6_6.webp",
+			"/images/projets/p6/p6_7.webp"
 		],
 		"description": "Conception d'une page web dynamique avec JavaScript pour le portfolio d’une architecte d’intérieur.",
 		"competences": [
@@ -86,14 +86,14 @@
 		"id": "5",
 		"title": "Ohmyfood",
 		"subtitle": "Animations en CSS",
-		"cover": "/images/projets/p4/p4_1.png",
+		"cover": "/images/projets/p4/p4_1.webp",
 		"pictures": [
-			"/images/projets/p4/p4_1.png",
-			"/images/projets/p4/p4_2.png",
-			"/images/projets/p4/p4_3.png",
-			"/images/projets/p4/p4_4.png",
-			"/images/projets/p4/p4_5.png",
-			"/images/projets/p4/p4_6.png"
+			"/images/projets/p4/p4_1.webp",
+			"/images/projets/p4/p4_2.webp",
+			"/images/projets/p4/p4_3.webp",
+			"/images/projets/p4/p4_4.webp",
+			"/images/projets/p4/p4_5.webp",
+			"/images/projets/p4/p4_6.webp"
 		],
 		"description": "Développement d'une inteface responsive (“mobile first”) avec des animations CSS.",
 		"competences": [
@@ -107,10 +107,10 @@
 		"id": "6",
 		"title": "Booki",
 		"subtitle": "HTML & CSS",
-		"cover": "/images/projets/p3/p3_1.png",
+		"cover": "/images/projets/p3/p3_1.webp",
 		"pictures": [
-			"/images/projets/p3/p3_1.png",
-			"/images/projets/p3/p3_2.png"
+			"/images/projets/p3/p3_1.webp",
+			"/images/projets/p3/p3_2.webp"
 		],
 		"description": "Création de la page d'accueil d'une agence de voyage avec HTML & CSS.",
 		"competences": [

@@ -22,14 +22,18 @@ import logoRedux from '../../images/competences/redux.webp'
 import logoSEO from '../../images/competences/seo.webp'
 import logoGestion from '../../images/competences/gestion.webp'
 
+// Redux
+import { useSelector } from 'react-redux'
+
 
 function Home () {
+  const { nightMode } = useSelector((state) => state.display)
   
   return (
     <div>
       <Header activeTab="profile"/>
       <main>
-        <article className="description">
+        <article className={nightMode?"description description_nightmode":"description description_lightmode"}>
           <img src={photoProfile} alt="Amandine Cartier-Michaud" className="description_photo" />
           <div className="description_text">
             <div className="description_title">
@@ -40,12 +44,13 @@ function Home () {
           </div>
         </article>
 
-        <section className="formation">
+        <section className={nightMode?"formation home_nightmode":"formation home_lightmode"}>
           <h1>Formation</h1>
           <div className='formation_container'>
             <div className='formation_card'>
               <div className="formation_title">
-                <Link className="formation_link" target="_blank" to="https://openclassrooms.com/fr/paths/594-integrateur-web">
+                <Link className={nightMode?"formation_link formation_link_nightmode":"formation_link formation_link_lightmode"}
+                  target="_blank" to="https://openclassrooms.com/fr/paths/594-integrateur-web">
                   <h2>Intégrateur Web</h2>
                 </Link>
                 <img src={openClassrooms} alt="OpenClassrooms" className="formation_logo" />
@@ -73,7 +78,7 @@ function Home () {
           </div>
         </section>
 
-        <section className="competences">
+        <section className={nightMode?"competences home_nightmode":"competences home_lightmode"}>
           <h1>Compétences</h1>
           <div className="competences_container">
             <Competence 
