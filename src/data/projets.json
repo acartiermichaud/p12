@@ -3,12 +3,12 @@
 		"id": "1",
 		"title": "Argent Bank",
 		"subtitle": "React & Redux",
-		"cover": "./p12/images/projets/p11/p11_1.webp",
+		"cover": "/images/projets/p11/p11_1.webp",
 		"pictures": [
-			"./p12/images/projets/p11/p11_1.webp",
-			"./p12/images/projets/p11/p11_2.webp",
-			"./p12/images/projets/p11/p11_3.webp",
-			"./p12/images/projets/p11/p11_4.webp"
+			"/images/projets/p11/p11_1.webp",
+			"/images/projets/p11/p11_2.webp",
+			"/images/projets/p11/p11_3.webp",
+			"/images/projets/p11/p11_4.webp"
 		],
 		"description": "Création d'une application web complète et responsive avec React et Redux pour une agence banquaire.",
 		"competences": [
