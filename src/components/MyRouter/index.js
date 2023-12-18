@@ -22,7 +22,7 @@ function MyRouter () {
   const { nightMode } = useSelector((state) => state.display)
   
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className={nightMode?"page-container page-container_nightmode":"page-container page-container_lightmode"}>
         <Routes>
           <Route path="/" element={<Home />} errorElement={<Error />}/>

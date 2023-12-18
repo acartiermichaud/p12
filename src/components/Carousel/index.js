@@ -23,7 +23,7 @@ function Carousel ({pictures}) {
   //   setTimeout(() => {
   //     handleArrowClick ("back")
   //   }, 1400)
-  },)
+  },[])
 
   // Function that calculates the new position in carousel
   function calcPosition (direction) {
