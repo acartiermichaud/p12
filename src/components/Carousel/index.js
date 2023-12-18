@@ -1,5 +1,5 @@
 // React
-import {useState, useEffect} from 'react'
+import {useState, useCallback, useEffect} from 'react'
 
 // PropTypes
 import PropTypes from 'prop-types'
@@ -19,11 +19,14 @@ function Carousel ({pictures}) {
   const [oldPosition, setOldPosition] = useState(0)
   const [mvt, setMvt] = useState("none")
 
-  useEffect(() => {
-  //   setTimeout(() => {
-  //     handleArrowClick ("back")
-  //   }, 1400)
-  },[])
+  
+  // const mvtCarousel = useCallback(() => {
+  //   setInterval(handleArrowClick ("back"), 1000) 
+  // }, [])
+
+  // useEffect(() => {
+  //   mvtCarousel()
+  // }, [mvtCarousel])
 
   // Function that calculates the new position in carousel
   function calcPosition (direction) {

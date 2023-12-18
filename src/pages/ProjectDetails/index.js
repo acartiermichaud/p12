@@ -46,10 +46,10 @@ function ProjectDetails () {
                   </div>
                 </div>
                 <div className='project_links-container'>
-                  <Link className={nightMode?"project_link nightmode2":"project_link lightmode"} to={selectedProject.githubpage} target="_blank">
+                  {selectedProject.githubpage!=="" && <Link className={nightMode?"project_link nightmode2":"project_link lightmode"} to={selectedProject.githubpage} target="_blank">
                     <i className="project_logo fa-brands fa-github"></i>
                     <h3>Lien GitHub Pages</h3>
-                  </Link>
+                  </Link>}
                   <Link className={nightMode?"project_link nightmode2":"project_link lightmode"} to={selectedProject.github} target="_blank">
                     <i className="project_logo fa-brands fa-github"></i>
                     <h3>Lien GitHub</h3>
