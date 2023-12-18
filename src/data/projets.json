@@ -43,14 +43,14 @@
 		"id": "3",
 		"title": "77events",
 		"subtitle": "Débogage & Tests",
-		"cover": "/images/projets/p10/p10_1.png",
+		"cover": "/images/projets/p10/p10_1.webp",
 		"pictures": [
-			"/images/projets/p10/p10_1.png",
-			"/images/projets/p10/p10_2.png",
-			"/images/projets/p10/p10_3.png",
-			"/images/projets/p10/p10_4.png",
-			"/images/projets/p10/p10_5.png",
-			"/images/projets/p10/p10_6.png"
+			"/images/projets/p10/p10_1.webp",
+			"/images/projets/p10/p10_2.webp",
+			"/images/projets/p10/p10_3.webp",
+			"/images/projets/p10/p10_4.webp",
+			"/images/projets/p10/p10_5.webp",
+			"/images/projets/p10/p10_6.webp"
 		],
 		"description": "Débogage du site web d'une agence d'événementiel et mise en place de tests automatisés.",
 		"competences": [
