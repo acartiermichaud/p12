@@ -16,7 +16,7 @@ import { displaySelect, displayUnselect } from '../../redux/displayActions'
 
 
 function Header ({activeTab}) {
-
+  
   const { nightMode } = useSelector((state) => state.display)
   const initialMode = nightMode ? 'header_sun fa-solid fa-sun' : 'header_moon fa-solid fa-moon'
   const [displayIconValue, setdisplayIconValue] = useState(initialMode)
@@ -37,7 +37,7 @@ function Header ({activeTab}) {
   return (
     <header className='header'>
       <div className={nightMode?'header_container header_container_nightmode':'header_container header_container_lightmode'}>
-        <button className='header_button' onClick={() => selectDisplay()} value="nightmode_switch"><i className={displayIconValue}></i></button>
+        <div className='header_button' onClick={() => selectDisplay()} value="nightmode_switch"><i className={displayIconValue}></i></div>
         <nav className='header_nav'>
           <Tab isActive={activeTab==="profile"} path="/" text="PROFIL"/>
           <Tab isActive={activeTab==="projects"} path="/projects" text="PROJETS"/>

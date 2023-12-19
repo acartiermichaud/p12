@@ -12,9 +12,9 @@ import { useSelector } from 'react-redux'
 
 
 function Carousel ({pictures}) {
+  
   const { nightMode } = useSelector((state) => state.display)
   const total = pictures.length
-
   let [position, setPosition] = useState(0)
   const [oldPosition, setOldPosition] = useState(0)
   const [mvt, setMvt] = useState("none")
@@ -63,7 +63,6 @@ function Carousel ({pictures}) {
     return () => clearInterval(interval)
   }, [handleArrowClick]) 
 
-
   return (
     <div className='carousel'>
       {nightMode && <div className='carousel_gradient'></div>}
@@ -74,7 +73,7 @@ function Carousel ({pictures}) {
       {total > 1 && <div className='carousel_arrow carousel_arrow_forward' onClick={() => handleArrowClick("forward")}><i className="carousel_icon fa-solid fa-angle-right"></i></div>}
       {total > 1 && <div className='carousel_arrow carousel_arrow_back' onClick={() => handleArrowClick("back")}><i className="carousel_icon fa-solid fa-angle-left"></i></div>}
 
-      {total > 1 && <div className={nightMode?"carousel_page-numbers nightmode2":"carousel_page-numbers lightmode"}><h3>{`${position+1}/${total}`}</h3></div>}
+      {total > 1 && <div className={nightMode?"carousel_page-numbers text_nightmode2":"carousel_page-numbers text_lightmode"}><h3>{`${position+1}/${total}`}</h3></div>}
     </div>
   )
 }

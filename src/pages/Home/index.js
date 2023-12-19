@@ -27,6 +27,7 @@ import { useSelector } from 'react-redux'
 
 
 function Home () {
+
   const { nightMode } = useSelector((state) => state.display)
   
   return (
@@ -49,7 +50,7 @@ function Home () {
           <div className='formation_container'>
             <div className='formation_card'>
               <div className="formation_title">
-                <Link className={nightMode?"formation_link formation_link_nightmode":"formation_link formation_link_lightmode"}
+                <Link className={nightMode?"formation_link text_nightmode":"formation_link text_lightmode"}
                   target="_blank" to="https://openclassrooms.com/fr/paths/594-integrateur-web">
                   <h2>Intégrateur Web</h2>
                 </Link>

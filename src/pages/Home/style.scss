@@ -9,17 +9,6 @@
   margin-bottom: 80px;
   padding: 0 30px;
 
-  &_lightmode {
-    background-image: url('../../images/background_description.webp');
-    box-shadow: rgba(0,0,0,.419608) 0px 14px 26px -12px, rgba(0,0,0,.117647) 0px 4px 23px 0px, rgba(0,0,0,.2) 0px 8px 10px -5px;
-  }
-
-  &_nightmode {
-    background-image: url('../../images/background_description_nightmode.webp');
-    box-shadow: rgba(200, 200, 200, 0.42) 0px 14px 26px -12px, rgba(200, 200, 200, 0.118) 0px 4px 23px 0px, rgba(200, 200, 200, 0.2) 0px 8px 10px -5px;
-  }
-
-
   @media (max-width: 1070px) {
     gap: 50px;
     background-position: right;
@@ -35,6 +24,16 @@
 
   @media (max-width: 480px) {
     margin-top: 150px;
+  }
+
+  &_lightmode {
+    background-image: url('../../images/background_description.webp');
+    box-shadow: rgba(0,0,0,.419608) 0px 14px 26px -12px, rgba(0,0,0,.117647) 0px 4px 23px 0px, rgba(0,0,0,.2) 0px 8px 10px -5px;
+  }
+
+  &_nightmode {
+    background-image: url('../../images/background_description_nightmode.webp');
+    box-shadow: rgba(200, 200, 200, 0.42) 0px 14px 26px -12px, rgba(200, 200, 200, 0.118) 0px 4px 23px 0px, rgba(200, 200, 200, 0.2) 0px 8px 10px -5px;
   }
 
   h1 {
@@ -87,11 +86,12 @@
     background-color: black;
     box-shadow: rgba(0,0,0,.419608) 0px 14px 26px -12px, rgba(0,0,0,.117647) 0px 4px 23px 0px, rgba(0,0,0,.2) 0px 8px 10px -5px;
     width: 300px;
-    height: auto;
+    height: 391px;
     border-radius: 5px;
 
     @media (max-width: 950px) {
       width: 200px;
+      height: 261px;
     }
   }
 }
@@ -139,14 +139,6 @@
     display: flex;
     justify-content: center;
     text-decoration: none;
-    
-    &_lightmode {
-      color: #333333;
-    }
-
-    &_nightmode {
-      color: white;
-    }
 
     &:hover {
       color: #889dd7;

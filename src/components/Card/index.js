@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux'
 
 
 function Card ({url, alt, title, subtitle}) {
+  
   const { nightMode } = useSelector((state) => state.display)
   
   return (

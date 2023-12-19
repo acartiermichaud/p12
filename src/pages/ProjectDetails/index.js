@@ -2,7 +2,7 @@
 import {useParams} from 'react-router-dom'
 import {Link} from 'react-router-dom'
 
-// Component
+// Components
 import Header from '../../components/Header'
 import Carousel from '../../components/Carousel'
 
@@ -17,6 +17,7 @@ import { useSelector } from 'react-redux'
 
 
 function ProjectDetails () {
+
   const { nightMode } = useSelector((state) => state.display)
 
   const selectedId = useParams().id
@@ -28,10 +29,10 @@ function ProjectDetails () {
         <main className="project_container">
           <section className={nightMode?"project project_nightmode":"project project_lightmode"}>
             <Link to="/projects" value="back">
-              <i className={nightMode?"back-arrow nightmode fa-solid fa-arrow-left":"back-arrow lightmode fa-solid fa-arrow-left"}></i>
+              <i className={nightMode?"back-arrow text_nightmode fa-solid fa-arrow-left":"back-arrow text_lightmode fa-solid fa-arrow-left"}></i>
             </Link>
-            <h1 className={nightMode?"nightmode":"lightmode"}>{selectedProject.title}</h1>
-            <h2 className={nightMode?"project_subtitle nightmode":"project_subtitle lightmode"}>{selectedProject.subtitle}</h2>
+            <h1 className={nightMode?"text_nightmode":"text_lightmode"}>{selectedProject.title}</h1>
+            <h2 className={nightMode?"project_subtitle text_nightmode":"project_subtitle text_lightmode"}>{selectedProject.subtitle}</h2>
             <div className='project_carousel'><Carousel pictures={selectedProject.pictures}/></div>
             <div className={nightMode?"project_infos project_infos_nightmode":"project_infos project_infos_lightmode"}>
               <div className="project_description">
@@ -46,11 +47,11 @@ function ProjectDetails () {
                   </div>
                 </div>
                 <div className='project_links-container'>
-                  {selectedProject.githubpage!=="" && <Link className={nightMode?"project_link nightmode2":"project_link lightmode"} to={selectedProject.githubpage} target="_blank">
+                  {selectedProject.githubpage!=="" && <Link className={nightMode?"project_link text_nightmode2":"project_link text_lightmode"} to={selectedProject.githubpage} target="_blank">
                     <i className="project_logo fa-brands fa-github"></i>
                     <h3>Lien GitHub Pages</h3>
                   </Link>}
-                  <Link className={nightMode?"project_link nightmode2":"project_link lightmode"} to={selectedProject.github} target="_blank">
+                  <Link className={nightMode?"project_link text_nightmode2":"project_link text_lightmode"} to={selectedProject.github} target="_blank">
                     <i className="project_logo fa-brands fa-github"></i>
                     <h3>Lien GitHub</h3>
                   </Link>
