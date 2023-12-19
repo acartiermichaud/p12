@@ -41,7 +41,7 @@ function Home () {
               <h1>AMANDINE</h1>
               <h1>CARTIER-MICHAUD</h1>
             </div>
-            <p>Dévelopeuse web, rigoureuse, créative et motivée !</p>
+            <p>Développeuse web, rigoureuse, créative et motivée !</p>
           </div>
         </article>
 
@@ -90,7 +90,7 @@ function Home () {
             <Competence 
               img={[{src: logoResponsive, alt: "Responsive Design"}]}
               title="Responsive Design" 
-              text="Mise en place d'un design compatible avec tous les types de navigateurs et tailles d’écrans."
+              text="Mise en place d'un design compatible avec tous les types de navigateurs et toutes les tailles d’écrans."
             />
             <Competence 
               img={[{src: logoReact, alt: "React"}, {src: logoRedux, alt: "Redux"}]}
