@@ -10,7 +10,7 @@ function Competence ({img, title, text}) {
   return (
     <article>
       <div className='competences_img-container'>
-        {img.map(i => <img key={i.src} src={i.src} alt={i.alt} className="competences_img" />)}
+        {img.map(i => <img key={i.src} src={i.src} alt={i.alt} loading="lasy" className="competences_img" />)}
       </div>
       <h2>{title}</h2>
       <p>{text}</p>

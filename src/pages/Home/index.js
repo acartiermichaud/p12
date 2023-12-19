@@ -34,7 +34,7 @@ function Home () {
       <Header activeTab="profile"/>
       <main>
         <article className={nightMode?"description description_nightmode":"description description_lightmode"}>
-          <img src={photoProfile} alt="Amandine Cartier-Michaud" className="description_photo" />
+          <img src={photoProfile} alt="Amandine Cartier-Michaud" className="description_photo" loading="lasy"/>
           <div className="description_text">
             <div className="description_title">
               <h1>AMANDINE</h1>
@@ -53,7 +53,7 @@ function Home () {
                   target="_blank" to="https://openclassrooms.com/fr/paths/594-integrateur-web">
                   <h2>Intégrateur Web</h2>
                 </Link>
-                <img src={openClassrooms} alt="OpenClassrooms" className="formation_logo" />
+                <img src={openClassrooms} alt="OpenClassrooms" className="formation_logo" loading="lasy"/>
                 <h3>AVRIL 2023 - DÉCEMBRE 2023</h3>
               </div>
               <FormationLabel 
@@ -72,9 +72,9 @@ function Home () {
                 text="600 heures supervisées"
               />
             </div>
-            <Link className="formation_link" target="_blank" to="https://openclassrooms.com/fr/paths/594-integrateur-web">
-              <img src={imgFormation} alt="Intégrateur Web" className="formation_img" />
-            </Link>
+            <div className="formation_img-container">
+              <img src={imgFormation} alt="Intégrateur Web" className="formation_img" loading="lasy"/>
+            </div>
           </div>
         </section>
 

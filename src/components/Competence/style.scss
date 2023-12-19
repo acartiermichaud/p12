@@ -7,7 +7,7 @@
     width: 15%;
     min-width: 200px;
 
-    @media (max-width: 1380px) {
+    @media (max-width: 1400px) {
       width: 25%;
     }
 
@@ -28,6 +28,7 @@
 
   &_img {
     height: 60px;
+    width: auto;
   }
 
   &_img-resized {

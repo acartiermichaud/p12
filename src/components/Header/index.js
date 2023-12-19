@@ -37,7 +37,7 @@ function Header ({activeTab}) {
   return (
     <header className='header'>
       <div className={nightMode?'header_container header_container_nightmode':'header_container header_container_lightmode'}>
-        <button className='header_button' onClick={() => selectDisplay()}><i className={displayIconValue}></i></button>
+        <button className='header_button' onClick={() => selectDisplay()} value="nightmode_switch"><i className={displayIconValue}></i></button>
         <nav className='header_nav'>
           <Tab isActive={activeTab==="profile"} path="/" text="PROFIL"/>
           <Tab isActive={activeTab==="projects"} path="/projects" text="PROJETS"/>

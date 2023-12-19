@@ -1,5 +1,5 @@
 // React
-import {useState, useCallback, useEffect} from 'react'
+import {useState, useEffect} from 'react'
 
 // PropTypes
 import PropTypes from 'prop-types'
@@ -18,15 +18,6 @@ function Carousel ({pictures}) {
   let [position, setPosition] = useState(0)
   const [oldPosition, setOldPosition] = useState(0)
   const [mvt, setMvt] = useState("none")
-
-  
-  // const mvtCarousel = useCallback(() => {
-  //   setInterval(handleArrowClick ("back"), 1000) 
-  // }, [])
-
-  // useEffect(() => {
-  //   mvtCarousel()
-  // }, [mvtCarousel])
 
   // Function that calculates the new position in carousel
   function calcPosition (direction) {
@@ -65,12 +56,20 @@ function Carousel ({pictures}) {
     sliding(direction)
   }
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleArrowClick("forward")
+    }, 2000)
+    return () => clearInterval(interval)
+  }, [handleArrowClick]) 
+
+
   return (
     <div className='carousel'>
       {nightMode && <div className='carousel_gradient'></div>}
 
-      <img className={`carousel_image carousel_image_current carousel_image_current_mvt-${mvt}`} src={pictures[position]} alt="Projet"></img>
-      <img className={`carousel_image carousel_image_previous carousel_image_previous_mvt-${mvt}`} src={pictures[oldPosition]} alt="Projet"></img>
+      <img className={`carousel_image carousel_image_current carousel_image_current_mvt-${mvt}`} src={pictures[position]} alt="Projet" loading="lasy"></img>
+      <img className={`carousel_image carousel_image_previous carousel_image_previous_mvt-${mvt}`} src={pictures[oldPosition]} alt="Projet" loading="lasy"></img>
 
       {total > 1 && <div className='carousel_arrow carousel_arrow_forward' onClick={() => handleArrowClick("forward")}><i className="carousel_icon fa-solid fa-angle-right"></i></div>}
       {total > 1 && <div className='carousel_arrow carousel_arrow_back' onClick={() => handleArrowClick("back")}><i className="carousel_icon fa-solid fa-angle-left"></i></div>}

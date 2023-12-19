@@ -27,7 +27,7 @@ function ProjectDetails () {
       <Header activeTab=""/>
         <main className="project_container">
           <section className={nightMode?"project project_nightmode":"project project_lightmode"}>
-            <Link to="/projects">
+            <Link to="/projects" value="back">
               <i className={nightMode?"back-arrow nightmode fa-solid fa-arrow-left":"back-arrow lightmode fa-solid fa-arrow-left"}></i>
             </Link>
             <h1 className={nightMode?"nightmode":"lightmode"}>{selectedProject.title}</h1>
@@ -42,7 +42,7 @@ function ProjectDetails () {
                 <div className="project_competences">
                   <h3>COMPÉTENCES</h3>
                   <div className='project_icons-container'>
-                    {selectedProject.competences.map(icon => <img className='project_icon' src={icon} alt={icon} key={icon}></img>)}
+                    {selectedProject.competences.map(icon => <img className='project_icon' src={icon} alt={icon} key={icon} loading="lasy"></img>)}
                   </div>
                 </div>
                 <div className='project_links-container'>

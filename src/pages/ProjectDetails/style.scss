@@ -117,6 +117,7 @@ section {
 
   &_icon {
     height: 50px;
+    width: auto;
 
     @media (max-width: 795px) {
       height: 35px;
@@ -156,19 +157,21 @@ section {
 .back-arrow {
   position: absolute;
   top: 10px;
-  left: 50px;
+  left: 30px;
   text-decoration: none;
+  z-index: 11;
 
   &:hover {
     color: #889dd7;
   }
 
   @media (max-width: 950px) {
-    left: 30px;
+    top: 5px;
+    left: 15px;
   }
 
-  @media (max-width: 950px) {
-    top: 5px;
+  @media (max-width: 480px) {
+    top: 25px;
     left: 5px;
   }
 }
